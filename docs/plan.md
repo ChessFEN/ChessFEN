@@ -4,7 +4,7 @@
 | ------------ | ---------------- | ----------------- | ------------------------- | ------------------------- | -------------------- |
 | **Abgabe**   | Ideeneinreichung | ---               | Beschreibung Projekt      | ---                       | Zwischenpräsentation |
 | **Workflow** | ---              | Ideenfestlegung   | Detaillierte Recherche    | Implementierung           | ---                  |
-| **Workflow** | ---              | Recherche         | Vorbereitung Präsentation | Vorbereitung Präsentation | ---                  |
+| **Workflow** | ---              | Recherche         | Vorbereitung Beschreibung Projekt | Vorbereitung Präsentation | ---                  |
 | **Workflow** | ---              | Konkurrenzanalyse | Implementierung           | ---                       | ---                  |
 
 | **Woche 2 2** | **Montag**         | **Dienstag**    | **Mittwoch**    | **Donnerstag**            | **Freitag**     |
