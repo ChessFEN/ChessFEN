@@ -23,7 +23,6 @@
 
 # Anforderungen
 - Das fertige MVP soll eine FEN als Input aufnehmen
-- Das fertige MVP soll eine FEN graphisch darstellen können
 - Das fertige MVP soll die aktuelle Schachposition evaluieren (in centipawns) und in menschlich verständlicher Sprache ausdrücken können
 - Das fertige MVP soll den besten Zug für den Spieler, der aktuell an der Reihe ist, finden
 - Das fertige MVP soll den besten Zug für den Spieler, der aktuell an der Reihe ist, in menschlich verständlicher Sprache erklären können, warum genau dies der beste Zug ist und welche Chancen sich aus diesem Zug ergeben
