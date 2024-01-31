@@ -7,7 +7,7 @@
 | **Workflow** | ---              | Recherche         | Vorbereitung Beschreibung Projekt | Vorbereitung Präsentation | ---                  |
 | **Workflow** | ---              | Konkurrenzanalyse | Implementierung                   | ---                       | ---                  |
 
-| **Woche 2 2** | **Montag**         | **Dienstag**    | **Mittwoch**    | **Donnerstag**            | **Freitag**     |
+| **Woche 2** | **Montag**         | **Dienstag**    | **Mittwoch**    | **Donnerstag**            | **Freitag**     |
 | ------------- | ------------------ | --------------- | --------------- | ------------------------- | --------------- |
 | **Abgabe**    | Praxispräsentation | ---             | ---             | ---                       | Endpräsentation |
 | **Workflow**  | Implementierung    | Implementierung | Implementierung | Implementierung           |                 |
