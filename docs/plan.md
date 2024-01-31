@@ -58,8 +58,8 @@
 - Oder: Reverse Engineering des Minimax Baums und nachvollziehen Evaluationsfunktion
   - Quelle Stockfish source code: https://github.com/official-stockfish/Stockfish
   - Quelle zur Stockfish Evaluierungsfunktion: https://www.chessprogramming.org/Stockfish#Evaluation_Guide
-- Input der Schritte der besten Evaluationen in eine LLM
-- Output einer Erklärung
+- Input der Schritte der besten Evaluationen in eine LLM, Verarbeitung im Backend (Python)
+- Output einer Erklärung via eines Frontends Terminal oder als Webapplikation (Reacht/Next.js/HTML/TS/CSS)
 
 # Konkurrenzanalyse
 
