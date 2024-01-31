@@ -1,11 +1,11 @@
 # Zeitplan
 
-| **Woche 1**  | **Montag**       | **Dienstag**      | **Mittwoch**              | **Donnerstag**            | **Freitag**          |
-| ------------ | ---------------- | ----------------- | ------------------------- | ------------------------- | -------------------- |
-| **Abgabe**   | Ideeneinreichung | ---               | Beschreibung Projekt      | ---                       | Zwischenpräsentation |
-| **Workflow** | ---              | Ideenfestlegung   | Detaillierte Recherche    | Implementierung           | ---                  |
+| **Woche 1**  | **Montag**       | **Dienstag**      | **Mittwoch**                      | **Donnerstag**            | **Freitag**          |
+| ------------ | ---------------- | ----------------- | --------------------------------- | ------------------------- | -------------------- |
+| **Abgabe**   | Ideeneinreichung | ---               | Beschreibung Projekt              | ---                       | Zwischenpräsentation |
+| **Workflow** | ---              | Ideenfestlegung   | Detaillierte Recherche            | Implementierung           | ---                  |
 | **Workflow** | ---              | Recherche         | Vorbereitung Beschreibung Projekt | Vorbereitung Präsentation | ---                  |
-| **Workflow** | ---              | Konkurrenzanalyse | Implementierung           | ---                       | ---                  |
+| **Workflow** | ---              | Konkurrenzanalyse | Implementierung                   | ---                       | ---                  |
 
 | **Woche 2 2** | **Montag**         | **Dienstag**    | **Mittwoch**    | **Donnerstag**            | **Freitag**     |
 | ------------- | ------------------ | --------------- | --------------- | ------------------------- | --------------- |
@@ -16,7 +16,7 @@
 
 # Mögliche Umsetzungsstrategien
 
-## Fine-tuned LLM -> Erklärung
+## Fine-tuned LLM -> Erklärung [Constantin]
 
 - Benutzen eines Open Source Fine-tuned LLM Modells
   - Quelle allgemeines Vorgehen: https://www.youtube.com/watch?v=Q9zv369Ggfk
@@ -25,7 +25,7 @@
 - Trainieren von einem/mehreren Modellen
 - Output einer Erklärung bei Input eines FEN
 
-## Chess Engine -> Evaluation -> LLM -> Erklärung
+## Chess Engine -> Evaluation -> LLM -> Erklärung [Aaron]
 
 - Programmieren einer eigener Chess Engine
   - Quelle Erklärung Algorithmus: https://www.youtube.com/watch?v=w4FFX_otR-4
