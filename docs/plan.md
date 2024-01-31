@@ -17,20 +17,20 @@
 # Ziele
 1. Einerarbeitung in das Thema
 2. Herausarbeitung verschiedener Umsetzungsstrategien und entwickeln dieser
-3. MVP in Form einer Computeranwendung, die einen FEN ([Forsyth-Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)) als Input erwartet und eine Erklärung über eine Schachposition zurückliefert und dabei besten eigenen Zug erklärt
+3. MVP in Form einer Computeranwendung, die eine FEN ([Forsyth-Edwards Notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)) als Input erwartet und eine Erklärung über eine Schachposition zurückliefert und dabei den besten eigenen Zug erklärt
 4. Erweiterung auf den gegnerischen besten Zug
-5. Erweiterung auf den jeweils schlechtesten Zug
-6. Erstellen einer UI -> Entweder als Website oder als Erweiterung für den Browser
+5. Erstellen einer UI -> Entweder als Website oder als Erweiterung für den Browser
 
 # Anforderung
-- Das fertige MVP soll einen FEN als Input aufnehmen
+- Das fertige MVP soll eine FEN als Input aufnehmen
+- Das fertige MVP soll eine FEN graphisch darstellen können
+- Das fertige MVP soll die aktuelle Schachposition evaluieren (in centipawns) und in menschlich verständlicher Sprache ausdrücken können
 - Das fertige MVP soll den besten Zug für den Spieler, der aktuell an der Reihe ist, finden
-- Das fertige MVP soll den besten Zug für den Spieler, der aktuell an der Reihe ist, in menschlicher, verständlicher Sprache Erklären können, warum genau dies der beste Zug ist und welche Chancen sich aus diesem Zug ergeben
-- Das erweiterte MVP soll den besten Zug für den Spieler, der als nächstes an der Reihe ist, finden
-- Das erweiterte MVP soll den besten Zug für den Spieler, der aktuell an der Reihe ist, in menschlicher, verständlicher Sprache Erklären können, warum genau dies der beste Zug ist und welche Chancen sich aus diesem Zug ergeben
-- Das erweiterte MVP soll jeweils den schlechtesten Zug für den Spieler, der aktuell an der Reihe ist und den Spieler, der als nächstes an der Reihe ist, finden
-- Das erweiterte MVP soll den schlechtesten Zug für den Spieler, der aktuell an der Reihe ist und den Spieler, der als nächstes an der Reihe ist, in menschlicher, verständlicher Sprache Erklären können, warum genau dies der beste Zug ist und welche Chancen sich aus diesem Zug ergeben
+- Das fertige MVP soll den besten Zug für den Spieler, der aktuell an der Reihe ist, in menschlich verständlicher Sprache erklären können, warum genau dies der beste Zug ist und welche Chancen sich aus diesem Zug ergeben
+- Das erweiterte MVP soll einen Schachzug als Input aufnehmen können und erklären können, warum dieser Zug gut/schlecht ist
 - Das erweiterte MVP soll anschaulich dargestellt werden
+- Das erweiterte MVP soll über die Möglichkeit verfügen, die aktuelle Schachposition zu verändern und erneut zu evaluieren
+- Das erweiterte MVP soll eine PGN als Input aufnehmen und nach jedem Zug eine Evaluierung in menschlich verständlicher Sprache ausgeben
   
 # Mögliche Umsetzungsstrategien inkl. Technologien
 
@@ -55,10 +55,10 @@
 ### Ablauf und Technologie
 - Programmieren einer eigener Chess Engine
   - Quelle Erklärung Algorithmus: https://www.youtube.com/watch?v=w4FFX_otR-4
-- Reverse Engineering des Minimax Baums und nachvollziehen Evaluationsfunktion
+- Oder: Reverse Engineering des Minimax Baums und nachvollziehen Evaluationsfunktion
   - Quelle Stockfish source code: https://github.com/official-stockfish/Stockfish
   - Quelle zur Stockfish Evaluierungsfunktion: https://www.chessprogramming.org/Stockfish#Evaluation_Guide
-- Input der Schritte der besten/schlechtesten Evaluationen in eine LLM
+- Input der Schritte der besten Evaluationen in eine LLM
 - Output einer Erklärung
 
 # Konkurrenzanalyse
