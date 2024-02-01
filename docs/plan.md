@@ -39,13 +39,30 @@
 
 ### Ablauf und Technologie
 
+### Unterscheidung
+
+1. Fine-tune ein pre-trained base LLM Modells
+   - Festlegen einer exakten Task
+     - "Erkläre mir für die folgende Schachposition in FEN Notation eine den besten Zug für [weiß/schwarz]"
+   - Auswahl eines geeigneten base LLM Modells
+     - Question Answering Modell: Frage + Kontext (Stockfish Analyse)
+     - 
+   - Erstellen einer Prompt/Answer Datenbank (Supervised. Gibt noch Self-Supervised und Reinforcement Learning)
+     - siehe PADatabase
+2. Database embedding
+
+### Grober Ablauf
+
 - Benutzen eines Open Source Fine-tuned LLM Modells (Auswahl einer oder mehrerer Modelle)
   - Quelle allgemeines Vorgehen: https://www.youtube.com/watch?v=Q9zv369Ggfk
+  - Quelle allgemeines Vorgehen: https://www.youtube.com/watch?v=eC6Hd1hFvos
   - Quelle Benutzen von LLM Modellen: https://ollama.ai/download
   - Quelle LLM Modelle: https://huggingface.co/
 - Generieren eines Datensatzes, dass FEN als Input und gute Analysen als Output liefert
 - Trainieren von einem/mehreren Modellen
 - Output einer Erklärung bei Input eines FEN
+
+
 
 ## Chess Engine -> Evaluation -> LLM -> Erklärung [Aaron]
 ### Benötigte Hardware
