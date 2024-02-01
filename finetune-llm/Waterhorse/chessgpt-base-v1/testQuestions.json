@@ -1,0 +1,26 @@
+{
+    "questionsPieceFinding": [
+        {"0": "Q:Given the following FEN, where is the white king: r2q1rk1/pp2bppp/2n1pn2/3p4/3P1B2/2N1P3/PP2NPPP/2RQ1RK1 w - - 6 11?A:"},
+        {"1": "Q:Given the following FEN, where is the black bishop: r2q1rk1/pp2bppp/2n1pn2/3p4/3P1B2/2N1P3/PP2NPPP/2RQ1RK1 w - - 6 11?A:"},
+        {"2": "Q:Given the following FAN, where is the black knight: r2q1rk1/pp2bppp/2n1pn2/3p4/3P1B2/2N1P3/PP2NPPP/2RQ1RK1 w - - 6 11?A:"},
+        {"3": "Q:Given the following FEN, where is the white bishop: 1nRb1rk1/1N2qppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 1 17?A:"},
+        {"4": "Q:Give the following FEN, wher is the white rock: 1nRb1rk1/1N2qppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 1 17?A:"},
+        {"5": "Q:Given the following FEN, where is the black queen: 1n1b1rk1/1NR2ppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 0 18?A:"},
+        {"6": "Q:1n1b1rk1/1NR2ppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 0 18, where is the qhite king??A:"},
+        {"7": "Q:1n1b1rk1/1NR2ppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 0 18, where are the white pawns?A:"},
+        {"8": "Q:Black knights where are they 1n1b1rk1/1NR2ppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 0 18A:"}
+    ],
+    "questionsPieceFindingV2": [
+        {"0": "Q: r2q1rk1/pp2bppp/2n1pn2/3p4/3P1B2/2N1P3/PP2NPPP/2RQ1RK1 w - - 6 11, where is the white king? A:"},
+        {"1": "Q: r2q1rk1/pp2bppp/2n1pn2/3p4/3P1B2/2N1P3/PP2NPPP/2RQ1RK1 w - - 6 11, where is the black bishop? A:"},
+        {"2": "Q: r2q1rk1/pp2bppp/2n1pn2/3p4/3P1B2/2N1P3/PP2NPPP/2RQ1RK1 w - - 6 11, where is the black knight? A:"}
+    ],
+    "temp": [
+        {"3": "Q: 1nRb1rk1/1N2qppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 1 17, where is the white bishop? A:"},
+        {"4": "Q: 1nRb1rk1/1N2qppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 1 17, wher is the white rock? A:"},
+        {"5": "Q: 1n1b1rk1/1NR2ppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 0 18, where is the black queen? A:"},
+        {"6": "Q: 1n1b1rk1/1NR2ppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 0 18, where is the qhite king?? A:"},
+        {"7": "Q: 1n1b1rk1/1NR2ppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 0 18, where are the white pawns? A:"},
+        {"8": "Q: 1n1b1rk1/1NR2ppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 b - - 0 18, Black knights where are they? A:"}
+    ]
+}
