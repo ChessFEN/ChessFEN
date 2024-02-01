@@ -46,7 +46,6 @@
      - "Erkläre mir für die folgende Schachposition in FEN Notation eine den besten Zug für [weiß/schwarz]"
    - Auswahl eines geeigneten base LLM Modells
      - Question Answering Modell: Frage + Kontext (Stockfish Analyse)
-     - 
    - Erstellen einer Prompt/Answer Datenbank (Supervised. Gibt noch Self-Supervised und Reinforcement Learning)
      - siehe PADatabase
 2. Database embedding
