@@ -27,7 +27,7 @@ class Stockfish:
     def set_depth(self, depth):
         self._put(f"go depth {depth}")
 
-    def evaluation(self, fen, depth):
+    def evaluate(self, fen, depth):
         self.set_fen(fen)
         self.set_depth(depth)
         self._put("eval")
