@@ -1,0 +1,1 @@
+var app=angular.module("chessStories");app.directive("ngRightClick",["$parse",function(n){return function(e,t,i){var a=n(i.ngRightClick);t.bind("contextmenu",function(n){e.$apply(function(){n.preventDefault(),a(e,{$event:n})})})}}]);

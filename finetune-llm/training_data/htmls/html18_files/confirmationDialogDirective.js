@@ -1,0 +1,1 @@
+"use strict";chessStories.directive("appConfirmationDialog",[function(){return{restrict:"EA",scope:{dialogTitle:"=",content:"=",confirmTitle:"=",onCancelOperation:"&",onConfirmOperation:"&"},templateUrl:"/static001767/app/shared/confirmationDialog/confirmationDialogView.html",controller:["$scope","i18nService",function(i,o){i.i18n=o.phrases}]}}]);

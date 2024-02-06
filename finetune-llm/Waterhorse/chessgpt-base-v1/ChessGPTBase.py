@@ -1,7 +1,8 @@
 # source: https://huggingface.co/Waterhorse/chessgpt-base-v1
 import torch
 import transformers
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM, BertTokenizer, BertForQuestionAnswering
+from torch.utils.data import DataLoader, Dataset
 
 MIN_TRANSFORMERS_VERSION = '4.25.1'
 
@@ -22,3 +23,6 @@ class ChessGPTBase:
         output_str = self.tokenizer.decode(token)
         
         return output_str
+    
+    def fine_tune():
+        

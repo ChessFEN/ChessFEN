@@ -1,0 +1,1 @@
+"use strict";chessStories.service("automationService",["$rootScope","$window","gameService","i18nService",function(e,i,n,o){o.phrases;function t(e){return console.log("event: ",e),void e.origin}return{init:function(e){e,window.addEventListener("message",t,!1)}}}]);

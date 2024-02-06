@@ -1,0 +1,1 @@
+"use strict";var moveCtrl=["$scope",function(e){}];chessStories.directive("appMove",[function(){return{restrict:"EA",scope:{mv:"=",onClick:"=clkMv",onRightClick:"=rightClkMv",curr_fen:"=currFen"},templateUrl:"/static001767/app/shared/move/moveView.html",controller:moveCtrl,controllerAs:"move",link:function(e,r,t){}}}]);
