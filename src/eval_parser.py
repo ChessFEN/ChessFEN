@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 from stockfish import Stockfish
 
 class EvalParser:
@@ -9,7 +8,7 @@ class EvalParser:
         self.white = EvalData()
         self.black = EvalData()
 
-    def stockfish_eval(self, fen, depth):
+    def stockfish_eval(self, fen, depth=10):
         self._eval = self._sf.evaluate(fen, depth)
         full_evaluation = self._eval.split("\n")
         evaluation = full_evaluation[4:full_evaluation.index("")]
@@ -29,7 +28,8 @@ class EvalParser:
                 self.black.data[term.lower()] = float(total)
 
             # print(f"{term} {white} {black} {total}")
-        print(f"white: {self.white}\n\nblack: {self.black}")
+        # print(f"white: {self.white}\n\nblack: {self.black}")
+        return f"white: {self.white}\n\nblack: {self.black}"
         # print(evaluation)
         # first static analysis
         # do bestmove
@@ -61,5 +61,6 @@ class EvalData:
     def __str__(self):
         return str(self.data)
 
-eval = EvalParser("/mnt/c/Users/sauer/Downloads/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2.exe")
-eval.stockfish_eval("5rk1/6pp/PNp5/2Pp4/1P1Pbq1P/6R1/4Q2P/6K1 b -", 20)
+# eval = EvalParser("/mnt/c/Users/sauer/Downloads/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2.exe")
+# eval = EvalParser(r"C:\Users\sauer\Downloads\stockfish-windows-x86-64-avx2\stockfish\stockfish-windows-x86-64-avx2.exe")
+# eval.stockfish_eval("5rk1/6pp/PNp5/2Pp4/1P1Pbq1P/6R1/4Q2P/6K1 b -", 20)
