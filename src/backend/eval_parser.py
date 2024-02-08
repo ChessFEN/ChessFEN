@@ -7,6 +7,7 @@ class EvalParser:
         self._sf = Stockfish(path)
         self._fen = fen
         self._bm = ""
+        self._eval = ""
         self.white = EvalData()
         self.black = EvalData()
 
@@ -14,6 +15,7 @@ class EvalParser:
         # XXX if in check, eval wont work
         eval = self._sf.evaluate(self._fen, moves)
         full_evaluation = eval.split("\n")
+        self._eval = full_evaluation[-5]
         evaluation = full_evaluation[4:full_evaluation.index("")]
         evaluation = evaluation[:evaluation.index("+------------+-------------+-------------+-------------+")]
         for e in evaluation:
@@ -30,8 +32,6 @@ class EvalParser:
                 self.white.data[term.lower()] = float(total)
                 self.black.data[term.lower()] = float(total)
 
-            # print(f"{term} {white} {black} {total}")
-        # print(f"white: {self.white}\n\nblack: {self.black}")
         return f"white: {self.white}<br>black: {self.black}"
 
     def pv(self, depth=10):
@@ -44,8 +44,7 @@ class EvalParser:
         self.stockfish_static_eval()
         white, black = copy.deepcopy(self.white), copy.deepcopy(self.black)
         self.pv(depth)
-        # print(f"{white}\n{black}\n\n{self.white}\n{self.black}")
-        return f"{white}<br>{black}<br><br>{self.white}<br>{self.black}"
+        return f"white: {self.white}\nblack: {self.black}"
 
 class EvalData:
 
@@ -70,9 +69,3 @@ class EvalData:
 
     def __str__(self):
         return str(self.data)
-
-# eval = EvalParser("/mnt/c/Users/sauer/Downloads/stockfish-windows-x86-64-avx2/stockfish/stockfish-windows-x86-64-avx2.exe")
-# eval = EvalParser(r"C:\Users\sauer\Downloads\stockfish-windows-x86-64-avx2\stockfish\stockfish-windows-x86-64-avx2.exe")
-# eval = EvalParser("../stockfish.exe", "3rrnk1/pp3p2/1q3B1p/7P/8/P1PB4/1P1Q1bP1/1K1R4 w - - 2 23")
-# eval.diff()
-# eval.stockfish_eval("5rk1/6pp/PNp5/2Pp4/1P1Pbq1P/6R1/4Q2P/6K1 b -", 20)

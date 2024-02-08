@@ -1,14 +1,14 @@
 <html>
-<header>
+<head>
     <title>ChessFEN</title>
-</header>
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+</head>
 <style>
 .column {
     float: left;
     width: 50%;
 }
 
-/* Clear floats after the columns */
 .container:after {
     content: "";
     display: table;
@@ -24,7 +24,7 @@
     </div>
     <hr>
     <div class="container">
-        <div class="column" id="myBoard" style="width:400px"></div>
+        <div class="column" id="board" style="width:400px"></div>
         <div class="column" id="static-eval"></div>
     </div>
     <link rel="stylesheet"
@@ -41,7 +41,7 @@
 </body>
 <script>
     var xhr = null;
-    var board = Chessboard('myBoard', 'start')
+    var board = Chessboard('board', 'start')
 
     getXmlHttpRequestObject = function () {
         if (!xhr) {
@@ -50,7 +50,7 @@
         return xhr;
     };
 
-    function dataCallback() {
+    function callback() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             console.log("Eval data received!");
             dataDiv = document.getElementById('static-eval');
@@ -60,11 +60,11 @@
     function getEval() {
         console.log("Get eval...");
         var fen = document.getElementById('fen')
-        var board = Chessboard('myBoard', fen.value)
+        var board = Chessboard('board', fen.value)
         console.log(fen.value)
         // 3rrnk1/pp3p2/1q3B1p/7P/8/P1PB4/1P1Q1bP1/1K1R4 w - - 2 23
         xhr = getXmlHttpRequestObject();
-        xhr.onreadystatechange = dataCallback;
+        xhr.onreadystatechange = callback;
         xhr.open("GET", "http://localhost:5000/?fen=" + fen.value, true);
         xhr.send(null);
     }
