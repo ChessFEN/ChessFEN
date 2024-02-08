@@ -1,1 +1,4 @@
 __pycache__
+mlx_model/
+adapters.npz
+models/

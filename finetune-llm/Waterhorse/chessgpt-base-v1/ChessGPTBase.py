@@ -23,6 +23,4 @@ class ChessGPTBase:
         output_str = self.tokenizer.decode(token)
         
         return output_str
-    
-    def fine_tune():
         
