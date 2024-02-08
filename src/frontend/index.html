@@ -1,0 +1,73 @@
+<html>
+<header>
+    <title>ChessFEN</title>
+</header>
+<style>
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+<body>
+    <div>
+        <label for="fen">Enter FEN:</label>
+        <input type="text" id="fen" />
+        <button onclick="getEval()">Evaluate</button>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="column" id="myBoard" style="width:400px"></div>
+        <div class="column" id="static-eval"></div>
+    </div>
+    <link rel="stylesheet"
+      href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+      integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
+      crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+        integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    var xhr = null;
+    var board = Chessboard('myBoard', 'start')
+
+    getXmlHttpRequestObject = function () {
+        if (!xhr) {
+            xhr = new XMLHttpRequest();
+        }
+        return xhr;
+    };
+
+    function dataCallback() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            console.log("Eval data received!");
+            dataDiv = document.getElementById('static-eval');
+            dataDiv.innerHTML = xhr.responseText;
+        }
+    }
+    function getEval() {
+        console.log("Get eval...");
+        var fen = document.getElementById('fen')
+        var board = Chessboard('myBoard', fen.value)
+        console.log(fen.value)
+        // 3rrnk1/pp3p2/1q3B1p/7P/8/P1PB4/1P1Q1bP1/1K1R4 w - - 2 23
+        xhr = getXmlHttpRequestObject();
+        xhr.onreadystatechange = dataCallback;
+        xhr.open("GET", "http://localhost:5000/?fen=" + fen.value, true);
+        xhr.send(null);
+    }
+</script>
+
+</html>

@@ -1,15 +1,18 @@
 from flask import Flask, request
+from flask_cors import CORS
 from eval_parser import EvalParser
 from openai import OpenAI
 
 app = Flask(__name__)
+CORS(app)
 client = OpenAI()
 
 @app.get("/")
 def get_test():
     fen = request.args.get("fen")
-    ep = EvalParser("../stockfish.exe", fen).diff()
-    resp = get_response(ep)
+    ep = EvalParser("../../stockfish.exe", fen).diff()
+    # resp = get_response(ep)
+    resp = ""
     return f"{fen}<br><br>{ep}<br><br>{resp}"
 
 
