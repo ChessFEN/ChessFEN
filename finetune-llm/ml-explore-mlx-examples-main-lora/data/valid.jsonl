@@ -1,11 +1,10 @@
-{"text": "fen: r2qr3/pppb1kpp/4pn2/8/2PQ1P2/5N2/PP4PP/2KR1B1R w - - 3 16\nQ: What is the next best move and why?\nA: The best move is Ne5+, because it forks the bishop and the king."}
-{"text": "fen: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1\nQ: What is the next best move and why?\nA: The best move is e4, because it guards d5."}
-{"text": "fen: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1\nQ: What is the next best move and why?\nA: The best move is e4, because it enables e5."}
-{"text": "fen: r2qr1k1/pppb2pp/4pn2/4N3/2PQ1P2/8/PP4PP/2KR1B1R w - - 5 17\nQ: What is the next best move and why?\nA: The best move is Nxd7, because it captures the black bishop."}
-{"text": "fen: r2qr1k1/pppb2pp/4pn2/4N3/2PQ1P2/8/PP4PP/2KR1B1R w - - 5 17\nQ: What is the next best move and why?\nA: The best move is Nxd7, because it threatens to capture the knight."}
-{"text": "fen: r3k2r/pp2p2p/1np1Pp1b/3pqp1P/8/2NB1Q2/PPP2P2/R4K1R b kq - 1 16\nQ: What is the next best move and why?\nA: The best move is O-O-O, because it enables Kb8."}
+{"text": "fen: 1nR2rk1/1Nb1qppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/5RK1 w - - 2 18\nQ: What is the next best move and why?\nA: The best move is Rxf8+, because it captures the black rook."}
+{"text": "fen: 2kr3r/pp2p2p/2p1Pp1b/3pqB1P/8/2N2n2/PPP2PK1/4R2R w - - 0 20\nQ: What is the next best move and why?\nA: The best move is Rxe5, because it captures the black queen."}
+{"text": "fen: 1k6/p3p2B/2r1P2b/1p5P/4N3/8/5PK1/8 w - - 4 40\nQ: What is the next best move and why?\nA: The best move is Ng3, because it vacates e4 and enables Be4."}
+{"text": "fen: 2kr2r1/pp2p2p/2p1P2b/4pB1P/3pN3/5K2/PPP2P2/7R b - - 3 24\nQ: What is the next best move and why?\nA: The best move is Rdf8, because it prevents playing Nf6  by guarding square f6."}
+{"text": "fen: r2q1rk1/pp2bppp/2n1pn2/3p4/3P1B2/2N1P3/PP2NPPP/2RQ1RK1 w - - 6 11\nQ: What is the next best move and why?\nA: The best move is Bg5, because it vacates f4 and enables Nf4."}
+{"text": "fen: rnbqk1nr/ppp2ppp/4p3/2bp4/8/4PQ1N/PPPP1PPP/RNB1KB1R w KQkq - 2 4\nQ: What is the next best move and why?\nA: The best move is d4, because it prevents playing c5  by guarding square c5."}
 {"text": "fen: r3k2r/pp2p2p/1np1Pp1b/3pqp1P/8/2NB1Q2/PPP2P2/R4K1R b kq - 1 16\nQ: What is the next best move and why?\nA: The best move is O-O-O, because it intends to play Kc7 or Nc4."}
-{"text": "fen: r3k2r/pp2p2p/1np1Pp1b/3pqp1P/8/2NB1Q2/PPP2P2/R4K1R b kq - 1 16\nQ: What is the next best move and why?\nA: The best move is O-O-O, because it allows the rook on d8 to control d2."}
-{"text": "fen: rn1qkbnr/pp2pppp/2p5/3pP3/8/5P1P/PPPP1P2/RNBQKB1R b KQkq - 0 5\nQ: What is the next best move and why?\nA: The best move is c5, because it vacates c6 and enables Nc6."}
-{"text": "fen: rn1qkbnr/pp2pppp/2p5/3pP3/8/5P1P/PPPP1P2/RNBQKB1R b KQkq - 0 5\nQ: What is the next best move and why?\nA: The best move is c5, because it prevents playing d4  by guarding square d4."}
-{"text": "fen: rn1qkbnr/pp2pppp/2p5/3pP3/8/5P1P/PPPP1P2/RNBQKB1R b KQkq - 0 5\nQ: What is the next best move and why?\nA: The best move is c5, because it intends to play e6."}
+{"text": "fen: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1\nQ: What is the next best move and why?\nA: The best move is e4, because it enables e5."}
+{"text": "fen: 5kB1/p3r1pp/2pQ4/1pP2P1P/8/5b2/qP6/2K3R1 b - - 0 32\nQ: What is the next best move and why?\nA: The best move is Qa1+, because it escapes the white bishop's threat (Bxa2)."}
+{"text": "fen: 1nR2rk1/1Nb1qppp/p3pn2/3p4/3P4/PQ2P3/1P2NPPP/2R3K1 b - - 3 18\nQ: What is the next best move and why?\nA: The best move is Rxc8, because it captures the white rook."}

@@ -1,4 +1,5 @@
 import json
+import random
 
 with open('trainBeforePreprocessing.json', 'r') as file:
     data = json.load(file)
@@ -13,7 +14,10 @@ for fen, moves in data.items():
         }
         formatted_data.append(formatted_entry)
 
-# Write the formatted data to a new JSON file
+# Shuffle the formatted data
+random.shuffle(formatted_data)
+
+# Write the shuffled formatted data to a new JSON file
 with open('train.json', 'w') as output_file:
     for entry in formatted_data:
         json.dump(entry, output_file)
