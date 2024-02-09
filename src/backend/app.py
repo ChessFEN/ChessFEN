@@ -10,7 +10,7 @@ client = OpenAI()
 @app.get("/")
 def get_test():
     fen = request.args.get("fen")
-    ep = EvalParser("../../stockfish.exe", fen)
+    ep = EvalParser("/opt/homebrew/bin/stockfish", fen)
     diff = ep.diff()
     resp = get_response(diff)
     return f"{ep._eval}<br>bestmove: {ep._bm}<br><br>{resp}"
