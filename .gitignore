@@ -1,4 +1,6 @@
 __pycache__
+*.swp
+*.*~
 mlx_model/
 adapters.npz
 models/
