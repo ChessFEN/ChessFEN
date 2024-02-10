@@ -1,0 +1,21 @@
+{
+    "2rq1rk1/R2n1ppp/4p3/2pb4/5B2/6P1/4PPBP/Q2R2K1 b - - 1 21": [
+        {"1":"Qa1 is good because it threatens to play Bxd5"},
+        {"2":"Qa1 is good because it supports the rook on d1"},
+        {"3":"Qa1 is good because it supports the rook on a7"},
+        {"4":"Qa1 is good because it enables Qd1"},
+        {"5":"Qa1 is good because it moves the white queen away from danger (Qb6(f6)-b2)"}
+    ],
+    "r4rkb/ppR5/3Np1pp/4n3/5N2/4Q3/q4PPP/3R2K1 w - - 2 24" : [
+        {"1":"Rf1 is beneficial because it supports the pawn on f2"},
+        {"2":"Rf1 is beneficial because it threatens to play Nxg6"}
+    ],
+    "1r3bk1/5p2/b5pB/2nP4/2p3N1/N2n2RP/1q3PP1/1B1Q2K1 w - - 0 29" : [
+        {"1":"Qf3 is beneficial because it threatens the black pawn on f7"},
+        {"2":"Qf3 is beneficial because it supports the pawn on f2"},
+        {"3":"Qf3 is beneficial because it supports playing Nf6+"},
+        {"4":"Qf3 is beneficial because it threatens the black bishop on g3"},
+        {"5":"Qf3 is beneficial because it prevents playing Ne4 by guarding square e4 "},
+        {"6":"Qf3 is beneficial because it threatens to play Nf6+"}
+    ]
+}

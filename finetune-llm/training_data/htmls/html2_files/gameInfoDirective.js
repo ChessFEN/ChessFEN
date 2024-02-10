@@ -1,0 +1,1 @@
+"use strict";angular.module("chessStories").directive("appGameInfo",[function(){return{restrict:"EA",scope:{toggleFn:"=",game:"=",onSaveGame:"=",ga:"="},templateUrl:"/static001767/app/shared/gameInfo/gameInfoView.html",controllerAs:"game_info",controller:["$scope","i18nService",function(e,n){e.i18n=n.phrases,e.hide_section=function(){e.toggleFn("game_info","closed")}}]}}]);
